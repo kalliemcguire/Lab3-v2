@@ -29,7 +29,6 @@ public class LoginServlet extends HttpServlet {
         
         //need this for anything that goes from one servlet to another
         HttpSession session = request.getSession();
-        PayrollSystem.initialize();
         PayrollSystem.initCheck();
 //        String url = "/login.jsp";
         

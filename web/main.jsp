@@ -13,21 +13,21 @@
         <form action="timecard" method="post">
             <input type="hidden" name="option" value="list">
             <input type="submit" value="Select" style="margin-left">
-            <label> Process time cards </label> 
+            <label>Process time cards</label> 
             <span> </span>
             <br>
         </form>
         <form action="login.jsp" method="post">
             <input type="hidden" name="option" value="return">
             <input type="submit" value="Select" style="margin-left">
-            <label> Exit </label>
+            <label>Exit</label>
             <span> </span>
             <br>
         </form>
         <form action="calculatepayroll.jsp" method="post">
             <input type="hidden" name="option" value="list">
             <input type="submit" value="Select" style="margin-left">
-            <label> Calculate payroll </label>
+            <label>Calculate payroll</label>
             <span> </span>
             <br>
         </form>

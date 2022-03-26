@@ -7,7 +7,7 @@
     </head>
     <body>
         <h1>Company Login</h1>
-        <p>${message}
+    <p1>${message}</p1>
             <form action="login" method="post">
             <label class="pad_top">User ID:</label>
             <input type="userID" name="userID" value="${userID}" required><br>

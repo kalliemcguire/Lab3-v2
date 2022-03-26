@@ -64,7 +64,6 @@ public class Timecard implements Serializable {
         return TimecardDA.getTimecards();
     }
     
-    //move this to TimecardDA
     public static ArrayList<Timecard> getEmployeeTimecards(int employeeId) {
         return TimecardDA.getEmployeeTimecards(employeeId);
     }

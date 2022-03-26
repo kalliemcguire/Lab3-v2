@@ -13,5 +13,11 @@
     </head>
     <body>
         <p1>Option not yet available.</p1>
+        <form action="login.jsp" method="post">
+            <input type="hidden" name="option" value="return">
+            <input type="submit" value="Return to Login" style="margin-left">
+            <span> </span>
+            <br>
+        </form>
     </body>
 </html>

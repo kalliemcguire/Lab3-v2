@@ -24,7 +24,7 @@ public class EmployeeDA {
         e.setOvertimeRate(18.50);
         e.setEmployeeId(103);
         e.setFirstName("Charlie");
-        e.setLastName("Charleston");
+        e.setLastName("Paul");
         e.setSsNumber(678932785);
         e.setUserID("User1");
         e.setPassword("user1");

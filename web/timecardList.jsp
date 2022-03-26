@@ -9,6 +9,7 @@
     </head>
     <body>
         <h1>List of Timecards</h1>
+    <p1>${salary}</p1>
         <table>
             <tr>
                 <th>Employee</th>
@@ -26,9 +27,17 @@
                             <input type="hidden" name="timecardId" value="<c:out value='${card.timecardId}'/>">
                             <input type="submit" value="Edit">
                         </form>
+                            <form action="deletetimecard.jsp" method="post">
+                                <input type ="hidden" name="option" value="delete">
+                                <input type="submit" value="Delete">
+                            </form>
                     </td>
                 </tr>
             </c:forEach>
         </table>
+        <<form action="newtimecard.jsp" method="post">
+            <input type="hidden" name="option" value="add">
+            <input type="submit" value="Add new Timecard">
+        </form>
     </body>
 </html>

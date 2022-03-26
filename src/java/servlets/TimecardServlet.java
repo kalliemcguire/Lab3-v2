@@ -34,12 +34,11 @@ public class TimecardServlet extends HttpServlet {
               
         HttpSession session = request.getSession();
  
-        PayrollSystem.initialize();
         PayrollSystem.initCheck();
         String option = request.getParameter("option");
         System.out.println("TimecardServlet option = " + option);
         
-        String url = "/success.jsp";
+        String url = "/main.jsp";
         
         if (option.equals("edit")) {
             url = "/timecard.jsp";
@@ -48,7 +47,6 @@ public class TimecardServlet extends HttpServlet {
         if (option.equals("list")) {
             Employee employee = (Employee)session.getAttribute("employee");
             System.out.println("employee: " + employee);
-            //System.out.println shows in glassfish server section of output
             ArrayList<Timecard> timecards = Timecard.getEmployeeTimecards(employee.getEmployeeId());
             System.out.println("Employee Id of employee logged in " + employee.getEmployeeId());
             session.setAttribute("timecards", timecards);

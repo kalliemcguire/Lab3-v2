@@ -50,6 +50,6 @@ public class PayrollSystem {
     public static void initCheck(){
         if (!initialized)
         PayrollSystem.initialize();
-        initialized = true;
+            initialized = true;
     }
 }
